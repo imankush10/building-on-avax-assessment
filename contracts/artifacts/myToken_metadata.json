@@ -336,7 +336,7 @@
 	},
 	"settings": {
 		"compilationTarget": {
-			"contracts/myToken.sol": "myToken"
+			"contracts/DegenToken.sol": "myToken"
 		},
 		"evmVersion": "cancun",
 		"libraries": {},
@@ -358,12 +358,12 @@
 				"dweb:/ipfs/Qmau6x4Ns9XdyynRCNNp3RhLqijJjFm7z5fyZazfYFGYdq"
 			]
 		},
-		"contracts/myToken.sol": {
-			"keccak256": "0x568370e05e173849fd31b724ffc2f3b89bff51849cf2c4d9b08fb6c92947dae5",
+		"contracts/DegenToken.sol": {
+			"keccak256": "0xd01ecd56aa824817caf8e58c9640ace5726cd5210ad31c42992d423fce066742",
 			"license": "MIT",
 			"urls": [
-				"bzz-raw://16029042ac5a9cdd0afea5e49c03b0893a2391f4c2a46b381f00c23d4f4e9908",
-				"dweb:/ipfs/QmYnhAQRe9K1psnbvQY6xUZRs7a8FZ6fDEegkaY4EHjm1U"
+				"bzz-raw://fa63ab76f76fbc5b251fa8412c1aeae6645cbe80261f65cbe45566ee621fbeaa",
+				"dweb:/ipfs/QmdtSPo9HQzzM8pW3SxUSA9JFdY3h6LPbsefN3fpVAWoup"
 			]
 		}
 	},

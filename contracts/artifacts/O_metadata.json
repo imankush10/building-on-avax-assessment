@@ -18,7 +18,7 @@
 	},
 	"settings": {
 		"compilationTarget": {
-			"contracts/myContract.sol": "BloggingApp"
+			"contracts/myContract.sol": "O"
 		},
 		"evmVersion": "cancun",
 		"libraries": {},
@@ -33,11 +33,11 @@
 	},
 	"sources": {
 		"contracts/myContract.sol": {
-			"keccak256": "0x8ed0d5d4b8db9d0e29c10b91879a3c7aada61674bdd7d6264d39d40f62bdb111",
+			"keccak256": "0xb34dd643931d14fe70793d4f9813f62551d092dc6d986110ab9a241860a33ce1",
 			"license": "MIT",
 			"urls": [
-				"bzz-raw://d15e37aff79979fddb8e4b0c9b9a62ae03a713f27b270b6becb1025ff60dcc1f",
-				"dweb:/ipfs/QmPrHyRgK9AYn9iTMACuRLYbMdhLhTveVgvCs87zvzSB8Q"
+				"bzz-raw://c6e014007a88a99082ab8629fbbf8b3695cbc86203206a182bd5acdcf009ed94",
+				"dweb:/ipfs/QmQu6ax4pFN4YnfetAU7eyge6raDcbCu4zvmbodmHyULYj"
 			]
 		}
 	},

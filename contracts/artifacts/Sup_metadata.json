@@ -4,7 +4,21 @@
 	},
 	"language": "Solidity",
 	"output": {
-		"abi": [],
+		"abi": [
+			{
+				"inputs": [],
+				"name": "sup2",
+				"outputs": [
+					{
+						"internalType": "string",
+						"name": "",
+						"type": "string"
+					}
+				],
+				"stateMutability": "nonpayable",
+				"type": "function"
+			}
+		],
 		"devdoc": {
 			"kind": "dev",
 			"methods": {},
@@ -18,7 +32,7 @@
 	},
 	"settings": {
 		"compilationTarget": {
-			"contracts/myContract.sol": "BloggingApp"
+			"contracts/myToken.sol": "Sup"
 		},
 		"evmVersion": "cancun",
 		"libraries": {},
@@ -32,12 +46,12 @@
 		"remappings": []
 	},
 	"sources": {
-		"contracts/myContract.sol": {
-			"keccak256": "0x8ed0d5d4b8db9d0e29c10b91879a3c7aada61674bdd7d6264d39d40f62bdb111",
+		"contracts/myToken.sol": {
+			"keccak256": "0x7e2d12907c62d83839c87d0452bdb32da3fa3104aa79eb890ead3d6f3dba38c0",
 			"license": "MIT",
 			"urls": [
-				"bzz-raw://d15e37aff79979fddb8e4b0c9b9a62ae03a713f27b270b6becb1025ff60dcc1f",
-				"dweb:/ipfs/QmPrHyRgK9AYn9iTMACuRLYbMdhLhTveVgvCs87zvzSB8Q"
+				"bzz-raw://a769077ad3a33b11c917b3c90807dbd904eddab0effe8215b8904edd38ad8c10",
+				"dweb:/ipfs/QmRZc75B8HNmHkQniRegU65y5V22aNpAt72xmpfFrRW2hs"
 			]
 		}
 	},

@@ -8,14 +8,15 @@ contract myToken is IERC20 {
     string public symbol;
     address public founder;
     uint256 public tokenTotalSupply;
-    mapping(address=>uint256) public balances;
-    mapping(address => mapping(address => uint256)) public allowances;
+    mapping(address=>uint256) balances;
+    mapping(address => mapping(address => uint256)) allowances;
 
     constructor(string memory _name, string memory _symbol, uint _tokenTotalSupply) {
         name = _name;
         symbol = _symbol;
         founder = msg.sender;
         tokenTotalSupply = _tokenTotalSupply;
+        balances[founder]= tokenTotalSupply;
     }
 
     function totalSupply() public view override returns (uint256) {
@@ -32,6 +33,7 @@ contract myToken is IERC20 {
 
         balances[msg.sender] -= amount;
         balances[recipient] += amount;
+
         emit Transfer(msg.sender, recipient, amount);
         return true;
     }
@@ -42,9 +44,9 @@ contract myToken is IERC20 {
 
     function approve(address spender, uint256 amount) public override returns (bool) {
         require(amount>0, "Invalid allowance amount");
-        require(balances[msg.sender] >= amount, "Insufficient balance");
 
         allowances[msg.sender][spender] = amount;
+        
         emit Approval(msg.sender, spender, amount);
         return true;
     }
@@ -71,6 +73,7 @@ contract myToken is IERC20 {
         emit Transfer(address(0), recipient, amount);
         return true;
     }
+
     function burn(uint256 amount) public returns(bool) {
         require(balances[msg.sender]>=amount, "Insufficient balance");
 
@@ -82,3 +85,7 @@ contract myToken is IERC20 {
     }
 
 }
+
+
+// Kitty, KTY, 10000
+// 0xAb8483F64d9C6d1EcF9b849Ae677dD3315835cb2

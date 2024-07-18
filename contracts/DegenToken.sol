@@ -20,7 +20,7 @@ contract DegenToken is ERC20, Ownable, ERC20Burnable {
         uint8 itemId;
         uint256 price;
     }
-    mapping (uint8=>Item) public items;
+    mapping (uint8=>Item) items;
     mapping (address=>Item[]) playerItems;
     uint8 public tokenId;
     
@@ -91,9 +91,25 @@ contract DegenToken is ERC20, Ownable, ERC20Burnable {
         emit ItemPurchased(msg.sender, _itemId, items[_itemId].name, items[_itemId].price);
     }
 
-    function getUserItems(address user) external view returns(Item[] memory){
-        return playerItems[user];
+    function getUserItems(address user) external view returns (uint8[] memory) {
+        Item[] memory itemsList = playerItems[user];
+        uint length = itemsList.length;
+
+        uint8[] memory _ids = new uint8[](length);
+
+        for (uint i = 0; i < length; i++) {
+            _ids[i] = itemsList[i].itemId;
+        }
+
+        return _ids;
     }
+    function getItemName(uint8 _id) external  view returns (string memory) {
+        return items[_id].name;
+    }
+    function getItemPrice(uint8 _id) external  view returns(uint){
+        return items[_id].price;
+    }
+
 
     // Checking token balance
 

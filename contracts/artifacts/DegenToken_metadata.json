@@ -418,6 +418,44 @@
 			{
 				"inputs": [
 					{
+						"internalType": "uint8",
+						"name": "_id",
+						"type": "uint8"
+					}
+				],
+				"name": "getItemName",
+				"outputs": [
+					{
+						"internalType": "string",
+						"name": "",
+						"type": "string"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "uint8",
+						"name": "_id",
+						"type": "uint8"
+					}
+				],
+				"name": "getItemPrice",
+				"outputs": [
+					{
+						"internalType": "uint256",
+						"name": "",
+						"type": "uint256"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"inputs": [
+					{
 						"internalType": "address",
 						"name": "user",
 						"type": "address"
@@ -426,26 +464,9 @@
 				"name": "getUserItems",
 				"outputs": [
 					{
-						"components": [
-							{
-								"internalType": "string",
-								"name": "name",
-								"type": "string"
-							},
-							{
-								"internalType": "uint8",
-								"name": "itemId",
-								"type": "uint8"
-							},
-							{
-								"internalType": "uint256",
-								"name": "price",
-								"type": "uint256"
-							}
-						],
-						"internalType": "struct DegenToken.Item[]",
+						"internalType": "uint8[]",
 						"name": "",
-						"type": "tuple[]"
+						"type": "uint8[]"
 					}
 				],
 				"stateMutability": "view",
@@ -467,35 +488,6 @@
 				"name": "isLessThanFive",
 				"outputs": [],
 				"stateMutability": "nonpayable",
-				"type": "function"
-			},
-			{
-				"inputs": [
-					{
-						"internalType": "uint8",
-						"name": "",
-						"type": "uint8"
-					}
-				],
-				"name": "items",
-				"outputs": [
-					{
-						"internalType": "string",
-						"name": "name",
-						"type": "string"
-					},
-					{
-						"internalType": "uint8",
-						"name": "itemId",
-						"type": "uint8"
-					},
-					{
-						"internalType": "uint256",
-						"name": "price",
-						"type": "uint256"
-					}
-				],
-				"stateMutability": "view",
 				"type": "function"
 			},
 			{
@@ -892,11 +884,11 @@
 			]
 		},
 		"contracts/DegenToken.sol": {
-			"keccak256": "0x366c250198af7e746fdef77be98fa58d77ed3694c57a929e3ea4a7f2fc56db62",
+			"keccak256": "0x1123789d6eb69d6b285cfb9dc597bf265acc291e2433616cacb2146927ee6dc3",
 			"license": "MIT",
 			"urls": [
-				"bzz-raw://57f74fd40eb0670c1e44fd06cb3f2944b63810ebe0e925d850b92b6f02f648c3",
-				"dweb:/ipfs/QmRJ9zqHnyoLRDW6P7ebt6ojRFLv4wxumjsF2SMdCJ61Xi"
+				"bzz-raw://46479b7568ff1710d0fd99dbc433a808ad8482893b21ae58fd0f26ba0a363b3a",
+				"dweb:/ipfs/QmTwbEjqZv7sgkK45tLUYC5X6p63BfewwSPpp5vTuzXuQF"
 			]
 		}
 	},

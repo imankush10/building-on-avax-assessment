@@ -21,6 +21,7 @@ contract DegenToken is ERC20, Ownable, ERC20Burnable {
         uint256 price;
     }
     mapping (uint8=>Item) public items;
+    mapping (address=>Item[]) playerItems;
     uint8 public tokenId;
     
     event ItemPurchased(address indexed buyer, uint8 itemId, string itemName, uint256 price);
@@ -85,8 +86,13 @@ contract DegenToken is ERC20, Ownable, ERC20Burnable {
         require(balanceOf(msg.sender) >= items[_itemId].price, "Insufficient balance");
 
         burn(items[_itemId].price);
+        playerItems[msg.sender].push(items[_itemId]);
 
         emit ItemPurchased(msg.sender, _itemId, items[_itemId].name, items[_itemId].price);
+    }
+
+    function getUserItems(address user) external view returns(Item[] memory){
+        return playerItems[user];
     }
 
     // Checking token balance
